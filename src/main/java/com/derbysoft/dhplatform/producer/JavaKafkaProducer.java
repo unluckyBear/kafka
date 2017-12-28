@@ -9,7 +9,7 @@ public class JavaKafkaProducer {
 
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "10.200.170.77:9092");
+        props.put("bootstrap.servers", "*****:9092");
         props.put("acks", "1");
         props.put("retries", 2);
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");

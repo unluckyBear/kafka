@@ -22,7 +22,7 @@ public class JavaKafkaProducer {
             final AtomicInteger success = new AtomicInteger(0);
             final AtomicInteger failed = new AtomicInteger(0);
             long start = System.currentTimeMillis();
-            for (int i = 0; i < 4000; i++) {
+            for (int i = 0; i < 5000; i++) {
                 producer.send(new ProducerRecord<String, String>("hello", Integer.toString(i), "producer: test" + Integer.toString(i)), new Callback() {
                     public void onCompletion(RecordMetadata metadata, Exception exception) {
                         if (exception != null) {

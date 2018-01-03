@@ -17,7 +17,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>10.200.170.77:5000/kafka-demo</imageName>
+                    <imageName>kafka-demo</imageName>
                     <dockerDirectory>${project.basedir}/</dockerDirectory>
                     <!--<resources>-->
                         <!--<resource>-->
